@@ -44,7 +44,7 @@ return array(
     'DB_USER'           => 'root',
     'DB_PWD'            => 'longxin',
     'DB_PORT'           => '3306',
-    'DB_PREFIX'         => 'lbsc_',
+    'DB_PREFIX'         => 'app_',
     'DB_RW_SEPARATE'    =>true,
     //读写分离
 
