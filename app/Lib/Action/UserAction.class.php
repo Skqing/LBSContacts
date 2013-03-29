@@ -6,10 +6,9 @@
  * Time: 上午2:23
  * Description: 处理用户业务
  */
-class UserAction extends Action
-{
-    public function signin()
-    {
+class UserAction extends BaseAction {
+
+    public function signin() {
         if ($this->isGet()){
             $this->assign('title', '注册'.' | '.C('APP_TITLENAME'));
             $this->display('signin');

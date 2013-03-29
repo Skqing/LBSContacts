@@ -6,8 +6,7 @@
  * Time: 下午4:44
  * Description: 处理系统事务
  */
-class SystemAction extends Action
-{
+class SystemAction extends BaseAction {
 
 
 }

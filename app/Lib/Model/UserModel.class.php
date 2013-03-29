@@ -6,9 +6,8 @@
  * Time: 下午7:50
  * Description: 用户模型
  */
-class UserModel extends Model
-{
-    protected $_validate=array(
+class UserModel extends BaseModel {
+    protected $_validate = array(
         //下面还需要再写数组。一个数组就是一条验证规则
         //array('验证字段','验证规则','错误提示','验证条件','附加规则','验证时间'),
         //验证字段：需要验证的表单字段名称,也可以表单当中的一些辅助字段,例如验证码，附加码，重复密码等

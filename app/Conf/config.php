@@ -8,6 +8,7 @@ $personality_config = array(
     //'URL_CASE_INSENSITIVE'   => true,  //不区分路径大小写
     'APP_DEBUG'              => true,  //开启调试模式
     'APP_STATUS'             => 'debug', //应用调试模式状态
+    //'SHOW_PAGE_TRACE'        =>true, // 显示页面Trace信息
     /*
     'SHOW_RUN_TIME'=>true,  //运行时间显示
     'SHOW_ADV_TIME'=>true,//显示详细的运行时间
@@ -16,6 +17,8 @@ $personality_config = array(
     'SHOW_USE_MEM'=>true,//显示内存开销
     */
     //'DB_FIELDS_CACHE'=>false,  //取消数据库字段缓存
+    //'TMPL_VAR_IDENTIFY'      => 'array',  //{$user.name}和{$user['name']}等效
+
 //    'LOG_RECORD'=>true,//开启了日志记录
 //    'LOG_RECORD_LEVEL'=>array('EMERG','ALERT','ERR'),
 

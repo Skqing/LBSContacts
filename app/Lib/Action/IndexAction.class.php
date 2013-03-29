@@ -6,10 +6,9 @@
  * Time: 上午2:23
  * Description: 首页
  */
-class IndexAction extends Action
-{
-    public function index()
-    {
+class IndexAction extends BaseAction {
+
+    public function index() {
 //        echo __ROOT__.'<br>';//代表网站的根目录地址
 //        echo __APP__.'<br>';//代前项目的入口文件地址
 //        echo __URL__.'<br>';//代表当前模块地址

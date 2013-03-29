@@ -6,10 +6,9 @@
  * Time: 下午4:59
  * Description: 公共事务处理
  */
-class PublicAction
-{
-    public function verifyCode()
-    {
+class PublicAction extends BaseAction {
+
+    public function verifyCode() {
         //导入验证码类
         //因为图像处理类并不是系统当中的核心类，因此，我们在使用的时候，他不会自动加载过来。我们需要导入一次
         import('ORG.Util.Image');

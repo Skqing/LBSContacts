@@ -6,7 +6,6 @@
  * Time: 下午4:43
  * Description: 处理系统安全事务
  */
-class SecurityAction extends Action
-{
+class SecurityAction extends BaseAction {
 
 }
