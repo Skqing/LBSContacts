@@ -7,6 +7,21 @@
  * Description: 用户模型
  */
 class UserModel extends BaseModel {
+    protected $tableName = 'app_user';
+//    private $id;
+//    private $email;
+//    private $username;
+    protected $fields = array(
+        'id', 'username', 'email', 'age', '_pk' => 'id', '_autoinc' => true
+    );
+    //字段映射
+    protected $_map = array(
+        // 不用写数组啦
+        //'是要在表单当中的字段写在前面'=>'是写到后面,数据表当中的真实字段写到后面',
+
+//        'uname'=>'username_',
+//        'upass'=>'password_'
+    );
     protected $_validate = array(
         //下面还需要再写数组。一个数组就是一条验证规则
         //array('验证字段','验证规则','错误提示','验证条件','附加规则','验证时间'),
@@ -60,15 +75,6 @@ class UserModel extends BaseModel {
 
     );
 
-
-    protected  $_map=array(
-        // 不用写数组啦
-        //'是要在表单当中的字段写在前面'=>'是写到后面,数据表当中的真实字段写到后面',
-        'uname'=>'username',
-        'upass'=>'password',
-
-
-    );
 
     function returnip(){
         return $_SERVER['REMOTE_ADDR'];

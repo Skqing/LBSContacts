@@ -9,6 +9,9 @@ $personality_config = array(
     'APP_DEBUG'              => true,  //开启调试模式
     'APP_STATUS'             => 'debug', //应用调试模式状态
     //'SHOW_PAGE_TRACE'        =>true, // 显示页面Trace信息
+
+    'TMPL_EXCEPTION_FILE'    => './App/Tpl/Public/error.html', // 定义公共错误模板
+    //'DEFAULT_TIMEZONE'       => 'Asia/Shanghai', // 设置默认时区为上海
     /*
     'SHOW_RUN_TIME'=>true,  //运行时间显示
     'SHOW_ADV_TIME'=>true,//显示详细的运行时间
@@ -21,9 +24,12 @@ $personality_config = array(
 
 //    'LOG_RECORD'=>true,//开启了日志记录
 //    'LOG_RECORD_LEVEL'=>array('EMERG','ALERT','ERR'),
-
-    //'TOKEN_ON'             => true,
-    //'TOKEN_NAME'           => '__lbscontacts__',
+//redirectURL
+    'TOKEN_ON'               => true,  // 是否开启令牌验证
+    //'TOKEN_NAME'             => '__hash__',    // 令牌验证的表单隐藏字段名称
+    //'TOKEN_TYPE'             => 'md5',  //令牌哈希验证规则 默认为MD5
+    //'TOKEN_RESET'            => true,  //令牌验证出错后是否重置令牌 默认为true
+    'DB_FIELDTYPE_CHECK'     => true,  // 开启字段类型验证
 );
 
 

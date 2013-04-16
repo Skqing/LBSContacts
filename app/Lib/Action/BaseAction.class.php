@@ -11,6 +11,7 @@ class BaseAction extends Action {
 
     protected function _initialize(){
         tag('action_init'); // 添加action_init 标签
+        $this->isLogin();
     }
 
     /**
@@ -20,5 +21,12 @@ class BaseAction extends Action {
         header("HTTP/1.0 404 Not Found");
         $this->assign('title', '404页面'.' | '.C('APP_TITLENAME'));
         $this->display('Public:404');
+    }
+
+    /**
+     * 检查用户是否登录
+     */
+    private function isLogin() {
+
     }
 }
